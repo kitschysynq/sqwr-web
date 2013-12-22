@@ -124,6 +124,30 @@ body {
   padding: 50px 0;
 }
 
+/* Events */
+
+.events {
+  background: #7fbbda;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.events-item {
+  margin-bottom: 15px;
+}
+
+i.events-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
 /* Services */
 
 .services {
@@ -160,6 +184,20 @@ i.service-icon {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* Projects */
+
+.projects {
+  padding: 50px 0;
+}
+
+.projects-item {
+  margin-bottom: 25px;
+}
+
+.img-projects {
+  margin: 0 auto;
 }
 
 /* Portfolio */
