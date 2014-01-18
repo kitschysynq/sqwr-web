@@ -241,8 +241,6 @@
     </script>
 
     <!-- Google Maps -->
-    
-    <!-- center: new google.maps.LatLng(-73.9608432,41.7210385), 41.719229!4d-->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
        function init_map() {
@@ -251,6 +249,7 @@
           var mapOptions = {
              zoom: 16,
 	     disableDefaultUI: true,
+	     scrollwheel: false,
 	     center: myLatlng,
 	     mapTypeId: google.maps.MapTypeId.ROADMAP
           };
@@ -268,6 +267,7 @@
 		  map: map,
 		  title: "Squidwrench @ Studio 81"
           });
+	  info_window.open(map, marker);
        }
        google.maps.event.addDomListener(window, 'load', init_map);
     </script>
