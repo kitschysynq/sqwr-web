@@ -172,9 +172,15 @@
     <!-- /Call to Action -->
 
     <!-- Map -->
-    <div id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/preview#!data=!1m4!1m3!1d7903!2d-73.964819!3d41.719229!4m13!3m12!1m0!1m1!1s81+Vineyard+Ave%2C+Highland%2C+NY+12528!3m8!1m3!1d5956!2d-73.964819!3d41.719229!3m2!1i1024!2i768!4f13.1&fid=0"></iframe><br /><small><a href="https://www.google.com/maps/preview#!data=!1m4!1m3!1d7903!2d-73.964819!3d41.719229!4m13!3m12!1m0!1m1!1s81+Vineyard+Ave%2C+Highland%2C+NY+12528!3m8!1m3!1d5956!2d-73.964819!3d41.719229!3m2!1i1024!2i768!4f13.1&fid=0"></a></small></iframe>
-    </div>
+    <!-- <div id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89dd3d93da89e409%3A0xfe83025fbcf1728d!2s81+Vineyard+Ave%2C+Highland%2C+NY+12528!5e0!3m2!1sen!2sus!4v1390076630069"></iframe>
+    <br />
+    <small>
+	    <a href="https://www.google.com/maps/preview#!q=81+Vineyard+Avenue%2C+Highland%2C+NY&data=!4m15!2m14!1m13!1s0x89dd3d93da89e409%3A0xfe83025fbcf1728d!3m8!1m3!1d2838!2d-73.9608432!3d41.7210385!3m2!1i1253!2i732!4f13.1!4m2!3d41.719229!4d-73.964819"></a>
+    </small>
+    </iframe>
+    </div> -->
+    <div id="contact"></div>
     <!-- /Map -->
     
     <!-- Footer -->
@@ -232,6 +238,38 @@
           }
         });
       });
+    </script>
+
+    <!-- Google Maps -->
+    
+    <!-- center: new google.maps.LatLng(-73.9608432,41.7210385), 41.719229!4d-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+       function init_map() {
+          var map;
+	  var myLatlng = new google.maps.LatLng(41.719229, -73.964819);
+          var mapOptions = {
+             zoom: 16,
+	     disableDefaultUI: true,
+	     center: myLatlng,
+	     mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map(document.getElementById('contact'), mapOptions);
+
+	  var info_content = '<div id="info-window"><h1>Squidwrench</h1><br />' +
+		  'Studio 81<br />' +
+		  '81 Vineyard Ave<br />' +
+		  'Highland, NY 12528';
+	  var info_window = new google.maps.InfoWindow({
+		  content: info_content
+	  });
+	  var marker = new google.maps.Marker({
+		  position: myLatlng,
+		  map: map,
+		  title: "Squidwrench @ Studio 81"
+          });
+       }
+       google.maps.event.addDomListener(window, 'load', init_map);
     </script>
 
   </body>

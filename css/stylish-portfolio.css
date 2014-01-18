@@ -248,6 +248,12 @@ i.service-icon {
   height: 500px;
 }
 
+#contact {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
 /* Footer */
 
 footer {
@@ -291,3 +297,4 @@ i.scroll:hover {
   }
 
 }
+
