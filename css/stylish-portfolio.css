@@ -286,4 +286,8 @@ i.scroll:hover {
 	height: 75%;
   }
 
+  .vert-text h1 {
+    font-size: 3.5em;
+  }
+
 }
