@@ -19,6 +19,16 @@ body {
   font-weight: 700;
 }
 
+.vert-text img {
+  margin-bottom: 15px;
+}
+
+@font-face {
+	font-family: Purisa;
+	src: local('Purisa'),
+	     url('../fonts/Purisa.ttf') format('truetype');
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -111,11 +121,16 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+  font-family: Purisa,Helvetica,arial;
   background: url(../img/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+h1, .h1 {
+  font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
 }
 
 /* Intro */
