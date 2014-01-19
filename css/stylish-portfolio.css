@@ -129,8 +129,9 @@ body {
   background-size: cover;
 }
 
-h1, .h1 {
+.header h1, .h1 {
   font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
+  text-shadow: 0 0 10px #FFF;
 }
 
 /* Intro */
