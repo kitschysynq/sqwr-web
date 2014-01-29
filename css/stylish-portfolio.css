@@ -131,20 +131,16 @@ body {
 
 .header h1, .h1 {
   font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
+  color: #FFFFFF;
   text-shadow: 00 0 0px #FFF;
-  margin: 4px 12px;
-  padding: 4px;
-  width: 1000px;
-  line-height: 1em;
-  height: 1.5em;
-  color: #fff;
-  background: #0686c9;
+
 }
 
 /* Intro */
 
 .intro {
   padding: 50px 0;
+  color: #ffffff;
 }
 
 /* Events */
