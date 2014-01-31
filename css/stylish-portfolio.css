@@ -122,7 +122,7 @@ body {
   width: 100%;
   position: relative;
   font-family: Purisa,Helvetica,arial;
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../img/rpi.jpg) no-repeat bottom center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -131,19 +131,24 @@ body {
 
 .header h1, .h1 {
   font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
-  text-shadow: 0 0 10px #FFF;
+  color: #FFFFFF;
+}
+
+.header h3, .h3 {
+  color: #FFFFFF;
 }
 
 /* Intro */
 
 .intro {
   padding: 50px 0;
+  color: #007F5B;
 }
 
 /* Events */
 
 .events {
-  background: #7fbbda;
+  background: #4C3D3C;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -167,7 +172,7 @@ i.events-icon {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: #22FF9F;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -195,7 +200,7 @@ i.service-icon {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/callout.jpg) no-repeat center center fixed; 
+  background: url(../img/bedrace.jpg) no-repeat center 80% fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -235,7 +240,7 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #0a5175;
+  background: #22FF9F;
   padding: 50px 0;
 }
 
@@ -282,11 +287,11 @@ i.scroll:hover {
 @media (max-width: 768px) {
 	
   .header {
-	background: url(../img/bg.jpg) no-repeat center center scroll; 
+	background: url(../img/rpi.jpg) no-repeat center 50% scroll; 
   }
 
   .callout {
-	background: url(../img/callout.jpg) no-repeat center center scroll; 
+	background: url(../img/bedrace.jpg) no-repeat center center scroll; 
   }
 
   .map {
