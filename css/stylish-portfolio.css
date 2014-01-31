@@ -132,15 +132,17 @@ body {
 .header h1, .h1 {
   font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
   color: #FFFFFF;
-  text-shadow: 00 0 0px #FFF;
+}
 
+.header h3, .h3 {
+  color: #FFFFFF;
 }
 
 /* Intro */
 
 .intro {
   padding: 50px 0;
-  color: #ffffff;
+  color: #007F5B;
 }
 
 /* Events */
