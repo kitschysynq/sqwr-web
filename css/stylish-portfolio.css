@@ -6,6 +6,19 @@ body {
   width: 100%;
 }
 
+a {
+  color:#516569;
+}
+ 
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
 .vert-text {
   display: table-cell;
   vertical-align: middle;
@@ -52,9 +65,20 @@ blockquote {
 }
 
 .btn-primary {
-  border-color: #72FF26;
-  background: #0010B2;
+  color: #000000;
+  border-color: #4DCF9A;
+  background: #4DCF9A;
 }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
 
 .sidebar-nav {
   position: absolute;
@@ -141,6 +165,7 @@ blockquote {
 .header h1, .h1 {
   font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
   color: #FFFFFF;
+  margin-top: 40px;
 }
 
 .header h3, .h3 {
@@ -152,13 +177,13 @@ blockquote {
 
 .intro {
   padding: 50px 0;
-  color: #007F5B;
+  color: #000000;
 }
 
 /* Events */
 
 .events {
-  background: #4C3D3C;
+  background: #4DCF9A;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -168,7 +193,7 @@ blockquote {
 }
 
 i.events-icon {
-  border: 3px solid #FF530D;
+  border: 3px solid #516569;
   border-radius: 50%;
   display: inline-block;
   font-size: 56px;
@@ -251,7 +276,7 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #22FF9F;
+  background: #88867F;
   padding: 50px 0;
 }
 
