@@ -1,15 +1,61 @@
+/* Bring in the Google fonts */
+@import url(http://fonts.googleapis.com/css?family=Averia+Sans+Libre|Belgrano);
+
 /* Global Styles */
+html {
+	background-color: #a1a0a0;
+}
 
 html,
 body {
   height: 100%;
   width: 100%;
+  
 }
+
+a {
+  background: transparent;
+	
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a {
+  color: #f3a808;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f3a806;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+#menu-toggle  {
+  
+  border-color: #000;
+}
+
+
+
 
 .vert-text {
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: center;  
 }
 
 .vert-text h1 {
@@ -17,20 +63,15 @@ body {
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
+  font-family: 'Averia Sans Libre', cursive;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
-blockquote {
-  text-shadow: 0 0 15px #000;
-}
-
-.vert-text img {
-  /* margin-bottom: 15px; */
-}
-
-@font-face {
-	font-family: Purisa;
-	src: local('Purisa'),
-	     url('../fonts/Purisa.ttf') format('truetype');
+.vert-text h3 {
+	font-family: 'Averia Sans Libre', cursive;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em
 }
 
 /* Side Menu */
@@ -39,7 +80,7 @@ blockquote {
   margin-right: -250px;
   right: 0;
   width: 250px;
-  background: #333;
+  background: #000;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -49,11 +90,6 @@ blockquote {
   -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-}
-
-.btn-primary {
-  border-color: #72FF26;
-  background: #0010B2;
 }
 
 .sidebar-nav {
@@ -77,7 +113,7 @@ blockquote {
 }
 
 .sidebar-nav li a:hover {
-  color: #72FF26;
+  color: #fff;
   background: rgba(255,255,255,0.2);
   text-decoration: none;
 }
@@ -107,7 +143,9 @@ blockquote {
   right: 0;
   position: fixed;
   z-index: 1;
+  background-color: #262622;
 }
+
 
 #sidebar-wrapper.active {
   right: 250px;
@@ -130,35 +168,23 @@ blockquote {
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: Purisa,Helvetica,arial;
-  background: url(../img/rpi.jpg) no-repeat bottom center fixed; 
+  background: url("../img/bg.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.header h1, .h1 {
-  font-family: Purisa, "Helvetica Neue", Helvetica, Arial, sans;
-  color: #FFFFFF;
-}
-
-.header h3, .h3 {
-  color: #FFFFFF;
-  line-height: 30px;
-}
-
 /* Intro */
 
 .intro {
   padding: 50px 0;
-  color: #007F5B;
 }
 
 /* Events */
 
 .events {
-  background: #4C3D3C;
+  background: #6c7379;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -168,7 +194,7 @@ blockquote {
 }
 
 i.events-icon {
-  border: 3px solid #FF530D;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
   font-size: 56px;
@@ -182,7 +208,7 @@ i.events-icon {
 /* Services */
 
 .services {
-  background: #22FF9F;
+  background: #7fbbda;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -210,7 +236,7 @@ i.service-icon {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/bedrace.jpg) no-repeat center 80% fixed; 
+  background: url("../img/callout.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -229,7 +255,6 @@ i.service-icon {
 
 .img-projects {
   margin: 0 auto;
-  border-radius: 10px;
 }
 
 /* Portfolio */
@@ -251,7 +276,8 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #22FF9F;
+  
+  background: #2d3238;
   padding: 50px 0;
 }
 
@@ -263,12 +289,6 @@ i.service-icon {
 
 .map {
   height: 500px;
-}
-
-#contact {
-  height: 100%;
-  margin: 0px;
-  padding: 0px
 }
 
 /* Footer */
@@ -298,20 +318,33 @@ i.scroll:hover {
 @media (max-width: 768px) {
 	
   .header {
-	background: url(../img/rpi.jpg) no-repeat center 50% scroll; 
+	background: url("../img/bg.jpg") no-repeat center center scroll; 
   }
 
   .callout {
-	background: url(../img/bedrace.jpg) no-repeat center center scroll; 
+	background: url("../img/callout.jpg") no-repeat center center scroll; 
   }
 
   .map {
 	height: 75%;
   }
 
-  .vert-text h1 {
-    font-size: 3.5em;
-  }
-
 }
+
+/* making color not suck */
+
+#about {
+	background-color: #bebfb9; 
+}
+#events {
+	background-color: #727369;
+}
+
+#projects {
+	background-color: #bebfb9;
+}
+.call-to-action {
+	background-color: #2d2d2b;
+}
+
 
