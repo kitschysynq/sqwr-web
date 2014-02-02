@@ -67,6 +67,9 @@ blockquote {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
+.btn {
+  font-family: Purisa,Helvetica,arial; 
+}
 
 .btn-primary {
   color: #000000;
