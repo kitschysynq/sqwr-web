@@ -33,7 +33,11 @@ a:hover {
 }
 
 blockquote {
-  text-shadow: 0 0 15px #000;
+    text-shadow: 0 0 15px #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 
 .vert-text img {
