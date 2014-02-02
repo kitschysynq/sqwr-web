@@ -33,7 +33,11 @@ a:hover {
 }
 
 blockquote {
-  text-shadow: 0 0 15px #000;
+    text-shadow: 0 0 15px #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 
 .vert-text img {
@@ -62,6 +66,9 @@ blockquote {
   -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+.btn {
+  font-family: Purisa,Helvetica,arial; 
 }
 
 .btn-primary {
